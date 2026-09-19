@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart — XDV Tech Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark"><i></i></span><span>XDV
+                TECH SHOP</span></a>
+        <nav class="main-nav"><a href="../index.html">Home</a><a href="../PC%20Parts/pc-parts.html">PC Parts</a><a
+                href="../Prebuilt%20PC/prebuilt.html">Prebuilt PCs</a></nav><a class="cart-link active-cart"
+            href="cart.html"><!-- IMAGE NEEDED: replace this cart navigation placeholder with a small cart icon image or SVG. Recommended: 24x24 transparent SVG/PNG. -->
+            <span class="cart-image-placeholder cart-nav-placeholder" role="img"
+                aria-label="Cart icon image needed">IMG</span><span class="cart-label"><b data-cart-count>0</b>
+                Cart</span></a>
+    </header>
+    <main>
+        <section class="cart-head">
+            <p class="eyebrow dark">YOUR XDV ORDER</p>
+            <h1>Shopping<br><em>cart.</em></h1>
+        </section>
+        <section class="cart-area">
+            <div class="cart-empty" data-cart-empty>
+                <div class="empty-icon">◌</div>
+                <h2>Your cart is clear.</h2>
+                <p>Pick a system or start with the parts for your next level.</p><a class="button button-red"
+                    href="../Prebuilt%20PC/prebuilt.html">SHOP SYSTEMS <span>→</span></a>
+            </div>
+            <div class="cart-content hidden" data-cart-content>
+                <div class="cart-list">
+                    <div class="cart-list-head"><span>PRODUCT</span><span>QUANTITY</span><span>PRICE</span><span></span>
+                    </div>
+                    <div data-cart-list></div><button class="clear-cart" data-clear-cart>Clear cart</button>
+                </div>
+                <aside class="summary">
+                    <p class="eyebrow dark">ORDER SUMMARY</p>
+                    <div><span>Subtotal</span><strong data-subtotal>₱0</strong></div>
+                    <div><span>Shipping</span><span class="free">FREE</span></div>
+                    <div class="summary-total"><span>Total</span><strong data-total>₱0</strong></div><button
+                        class="button button-red checkout-button" type="button" data-checkout>CHECKOUT
+                        <span>→</span></button>
+                    <p class="checkout-note">Secure checkout · 7-day returns</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand"><a class="brand inverse" href="../index.html"><span
+                        class="brand-mark"><i></i></span><span>XDV TECH SHOP</span></a>
+                <p>Your trusted store for PC parts and prebuilt computers.</p>
+            </div>
+            <div class="footer-column">
+                <h4>SHOP</h4><a href="../PC%20Parts/pc-parts.html">PC Parts</a><a
+                    href="../Prebuilt%20PC/prebuilt.html">Prebuilt PCs</a>
+            </div>
+            <div class="footer-column">
+                <h4>CUSTOMER SERVICE</h4><a href="../index.html#shipping">Shipping & Delivery</a><a
+                    href="../index.html#returns">Returns & Refunds</a><a href="../index.html#warranty">Warranty</a><a
+                    href="../index.html#faqs">FAQs</a>
+            </div>
+            <div class="footer-column">
+                <h4>COMPANY</h4><a href="../index.html#about">About Us</a><a href="../index.html#contact">Contact
+                    Us</a><a href="../index.html#terms">Terms & Conditions</a><a href="../index.html#privacy">Privacy
+                    Policy</a>
+            </div>
+            <div class="footer-column contact">
+                <h4>CONTACT US</h4><a href="mailto:support@xdvtechshop.com">support@xdvtechshop.com</a><a
+                    href="tel:09123456789">0912-345-6789</a>
+                <p>123 XDV Tech Shop Street,<br>Tech City, PH 1000</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 XDV TECH SHOP. ALL RIGHTS RESERVED.</span><span>QUALITY HARDWARE. GREAT
+                PRICES.</span></div>
+    </footer>
+    <div class="toast" data-toast role="status"></div>
+    <script type="module" src="../JavaScript/store.js"></script>
+</body>
+
+</html>
